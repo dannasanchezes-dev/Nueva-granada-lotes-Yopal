@@ -891,3 +891,270 @@ nav a{
 .video-proyecto:hover{
     transform:scale(1.02);
 }
+
+.opciones{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:10px;
+}
+
+.opciones label{
+    font-weight:normal;
+    }
+
+.boton{
+    text-align:center;
+    margin-top:35px;
+}
+
+.boton button{
+    background:#1f7a35;
+    color:white;
+    border:none;
+    padding:16px 45px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.boton button:hover{
+    background:#145324;
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+.opciones{
+    grid-template-columns:1fr;
+}
+
+}
+
+.botones{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+.botones button{
+    padding:15px 35px;
+    border:none;
+    background:#1f7a35;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+.botones button:hover{
+    background:#145324;
+}
+
+@keyframes fade{
+    from{
+    opacity:0;
+    transform:translateX(30px);
+    }
+    to{
+    opacity:1;
+    transform:translateX(0);
+    }
+
+}
+.activo {
+    color: #d4af37;
+    font-weight: bold;
+    border-bottom: 2px solid #d4af37;
+}
+
+.hero-encuesta{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("imagenes/fondo-encuesta.jpeg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-contenido{
+    max-width:800px;
+    color:#fff;
+}
+
+.hero-contenido h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-contenido p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.btn-principal{
+    display:inline-block;
+    background:#2E7D32;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-principal:hover{
+    background:#1B5E20;
+    transform:translateY(-3px);
+}
+
+.encuesta{
+    background:#f5f5f5;
+    padding:80px 20px;
+}
+
+.contenedor-encuesta{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+.barra-progreso{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:30px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.progreso{
+    width:20%;
+    height:100%;
+    background:#2E7D32;
+    transition:.4s;
+}
+
+.texto-paso{
+    text-align:center;
+    color:#2E7D32;
+    font-weight:bold;
+    margin-bottom:35px;
+}
+
+.paso{
+    display:none;
+}
+
+.paso.activo{
+    display:block;
+}
+
+.paso i{
+    display:block;
+    font-size:60px;
+    color:#D4AF37;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.paso h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:35px;
+}
+
+.opcion{
+    display:block;
+    padding:18px 20px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    margin-bottom:18px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:17px;
+}
+
+.opcion:hover{
+    border-color:#2E7D32;
+    background:#eef8ef;
+}
+
+.opcion input{
+    margin-right:10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea{
+    width:100%;
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    margin-bottom:18px;
+    font-size:16px;
+    transition:.3s;
+    box-sizing:border-box;
+
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+    border-color:#2E7D32;
+
+}
+
+.botones{
+    display:flex;
+    justify-content:space-between;
+    margin-top:35px;
+}
+
+.botones button{
+
+    background:#2E7D32;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.botones button:hover{
+    background:#1B5E20;
+}
+
+.botones i{
+    margin:0 5px;
+}
+
+@media(max-width:768px){
+    .hero-contenido h1{
+        font-size:38px;
+    }
+
+    .hero-contenido p{
+        font-size:17px;
+    }
+
+    .contenedor{
+        padding:25px;
+    }
+    .botones{
+        flex-direction:column;
+        gap:15px;
+    }
+    .botones button{
+        width:100%;
+    }
+}
