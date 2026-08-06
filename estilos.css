@@ -970,7 +970,7 @@ nav a{
 .hero-encuesta{
     height:85vh;
     background:linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("imagenes/fondo-encuesta.jpeg") center/cover no-repeat;
+    url("IMAGENES/fondo-encuesta.jpeg") center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
