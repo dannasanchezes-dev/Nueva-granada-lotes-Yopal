@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación La Nueva Granada de los Llanos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>Fundación La Nueva Granada de los Llanos</h1>
+<p>
+                Venta de lotes en Yopal - Casanare
+            </p>
+</div>
+
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="lotes.html">Lotes</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="encuesta.html" class="activo">Encuesta</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+
+</header>
+
+
+<section class="hero-encuesta">
+
+        <div class="hero-contenido">
+
+            <h1>Encuentra el lote ideal para ti</h1>
+
+            <p>
+                Responde esta breve encuesta para conocer tus necesidades y ayudarte
+                a encontrar el lote que mejor se adapte a ti.
+            </p>
+
+            <a href="#encuesta" class="btn-principal">
+                Comenzar encuesta
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="encuesta" id="encuesta">
+
+        <div class="contenedor-encuesta">
+
+            <div class="barra-progreso">
+
+                <div class="progreso" id="progreso"></div>
+
+            </div>
+
+            <p class="texto-paso">
+
+                Paso <span id="numeroPaso">1</span> de 5
+
+            </p>
+
+            <form id="formulario">
+
+                <div class="paso activo">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <h2>¿Para qué deseas el lote?</h2>
+
+                    <label class="opcion">
+                        <input type="radio" name="uso">
+                        Construir vivienda
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="uso">
+                        Inversión
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="uso">
+                        Negocio
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="uso">
+                        Finca
+                    </label>
+
+                </div>
+
+                <div class="paso">
+
+                    <i class="fa-solid fa-money-bill-wave"></i>
+
+                    <h2>¿Cuál es tu presupuesto?</h2>
+
+                    <label class="opcion">
+                        <input type="radio" name="presupuesto">
+                        Menos de $50 millones
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="presupuesto">
+                        Entre $50 y $100 millones
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="presupuesto">
+                        Entre $100 y $200 millones
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="presupuesto">
+                        Más de $200 millones
+                    </label>
+
+                </div>
+
+                <div class="paso">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <h2>¿Qué tamaño buscas?</h2>
+
+                    <label class="opcion">
+                        <input type="radio" name="tamano">
+                        Pequeño
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="tamano">
+                        Mediano
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="tamano">
+                        Grande
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="tamano">
+                        No estoy seguro
+                    </label>
+                </div>
+
+                <div class="paso">
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Información de contacto</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Correo electrónico">
+                    <input type="tel" placeholder="Número de teléfono">
+                </div>
+
+                <div class="paso">
+                    <i class="fa-solid fa-comment"></i>
+                    <h2>Comentarios</h2>
+                    <textarea rows="6"
+                        placeholder="Escribe aquí tus comentarios o necesidades."></textarea>
+                </div>
+
+
+                <div class="botones">
+                    <button type="button" id="anterior">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Anterior
+                    </button>
+                    <button type="button" id="siguiente">
+                        Siguiente
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="scriptEncuesta.js"></script>
+
+</body>
+
+</html>
